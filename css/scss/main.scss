@@ -1,3 +1,146 @@
 @use 'utils';
+@use 'global';
 
+#nav-container {
+   z-index: 999;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: auto;
+   padding: utils.$space-s utils.$space-l;
+   background-color: utils.$bg-second-color;
 
+   a {
+      color: utils.$text-color;
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+
+   .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      .nav-link {
+         padding: utils.$space-s utils.$space-m;
+         transition: all .15s ease;
+         &:hover {
+            background-color: utils.$accent-color;
+            color: utils.$bg-color;
+         }
+         &:active {
+            background-color: utils.$primary-color;
+         }
+      }
+   }
+
+   .auth {
+      display: flex;
+      flex-wrap: wrap;
+      gap: utils.$space-m;
+      a {
+         padding: utils.$space-s utils.$space-m;
+         &:last-of-type {
+            color: #F8FAFC;
+            &:active {
+               background-color: utils.$primary-color;
+            }
+         }
+      }
+   }
+}
+
+.main-wrapper {
+   position: absolute;
+   top: 5%;
+
+   // Hero
+
+   #hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: auto;
+      align-items: center;
+      justify-items: center;
+      height: 100vh;
+      column-gap: utils.$space-s;
+      .hero-text {
+         h1 {
+            font-size: 6rem;
+            margin-bottom: utils.$space-s;
+         }
+         
+         p,
+         a {
+            font-size: 2.2rem;
+         }
+         p:first-of-type {
+            margin-bottom: utils.$space-s;
+         }
+         p:last-of-type {
+            margin-bottom: 0;
+         }
+
+         a {
+            max-width: 60%;
+            padding: utils.$space-s utils.$space-m;
+            color: utils.$text-color;
+            margin-bottom: utils.$space-s;
+            color: #F8FAFC;
+            &:active {
+               background-color: utils.$primary-color;
+            }
+         }
+
+         .credit-card {
+            font-style: italic;
+            font-size: 1.6rem;
+         }
+      }
+
+      .hero-img {
+         .hero-img-container {
+            overflow: hidden;
+            box-shadow: 0 0 6px #555;
+            border-radius: utils.$corner-s;
+         }
+      }
+   }
+
+   // Features
+
+   #features {
+      h2 {
+         font-size: 4.5rem;
+         margin-bottom: utils.$space-m;
+      }
+   }
+
+   .feature-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: auto;
+      gap: utils.$space-s;
+      .feature-box {
+         background: linear-gradient(45deg, utils.$primary-color, utils.$accent-color);
+         color: utils.$bg-color;
+         height: auto;
+         padding: utils.$space-m;
+         border-radius: utils.$corner-m;
+         box-shadow: 0 0 8px #555;
+         line-height: 1.8;
+         h3 {
+           font-size: 2.4rem; 
+         }
+
+         p {
+            font-size:1.8rem;
+         }
+      }
+   }
+
+}

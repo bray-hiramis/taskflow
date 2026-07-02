@@ -4,9 +4,88 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/main.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/f911defdbe.js" crossorigin="anonymous"></script>
    <title>TaskFlow</title>
 </head>
 <body>
    
+   <!-- Navigation -->
+   <div class="padding-global">
+      <div class="container-large">
+         <div class="padding-sections">
+            <nav id="nav-container">
+               <a href="#hero" class="logo">TaskFlow</a>
+               <ul class="nav-links">
+                  <li><a href="#features" class="nav-link">Features</a></li>
+                  <li><a href="#" class="nav-link">Pricing</a></li>
+                  <li><a href="#" class="nav-link">Contact Us</a></li>
+               </ul>
+               <div class="auth">
+                  <a href="#" class="btn">Sign In</a>
+                  <a href="#" class="btn btn-accent">Sign Up</a>
+               </div>
+            </nav>
+         </div>
+      </div>
+   </div>
+
+   <!-- Hero -->
+   <div class="main-wrapper">
+
+      <div class="padding-global">
+         <div class="container-large">
+            <header id="hero">
+               <div class="hero-text">
+                  <h1>Align Your SaaS Teams from Code to Customer.</h1>
+                  <p>TaskFlow bridges the gap between customer feedback, product roadmaps, and developer sprints. Ship features faster without the cross-department chaos.</p>
+                  <a href="#" class="btn btn-accent">Start Your Free 14-Day Trial</a>
+                  <p class="credit-card">No credit card required *</p>
+               </div>
+               <div class="hero-img">
+                  <div class="hero-img-container">
+                     <img src="./assets/img_showcase/taskflow_ui.webp" alt="TaskFlow Dashboard User Interface.">
+                  </div>
+               </div>
+            </header>
+         </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="padding-global">
+         <div class="container large">
+            <main id="main-content-area">
+               
+               <!-- Features -->
+               <section id="features" class="padding-sections">
+                  <h2>Features</h2>
+                  <div class="feature-container">
+                     <div class="feature-box">
+                        <h3><i class="fa-regular fa-comment-dots"></i> The Unified Feedback Inbox</h3>
+                        <p>Aggregates customer feature requests and bug reports from Intercom, Slack, or email directly into a triage board.</p>
+                     </div>
+                     <div class="feature-box">
+                        <h3><i class="fa-solid fa-person-running"></i> Interlocking Sprints</h3>
+                        <p>Let product managers link marketing launch checklists directly to GitHub/GitLab repository issues. When developers merge the code, the marketing task goes live.</p>
+                     </div>
+                     <div class="feature-box">
+                        <h3><i class="fa-solid fa-timeline"></i> Interactive Public Roadmaps</h3>
+                        <p>Turn internal task boards into a public, upvotable roadmap for users with a single click, closing the loop on transparency.</p>
+                     </div>
+                     <div class="feature-box">
+                        <h3><i class="fa-solid fa-chart-column"></i> SaaS Metric Dashboards</h3>
+                        <p>Visually link tasks to business goals. See how completing a set of optimization tasks directly correlates to drops in server latency or user churn.</p>
+                     </div>
+                  </div>
+               </section>
+
+            </main>
+         </div>
+      </div>
+
+   </div>
+
 </body>
 </html>
