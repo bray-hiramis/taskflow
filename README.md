@@ -10,7 +10,9 @@ TaskFlow is a mockup landing website for SAAS Productivity Tool.
 - FAQs - For most common questions regarding the services.
 
 ## Demo
-<img src="./_screenshots/taskflow_hero_page.png" alt="Screenshot of TaskFlow front page." width="500">
+Live Demo: https://taskflowprodapp.netlify.app/
+
+<img src="./_screenshots/taskflow_ui_v2.png" alt="Screenshot of TaskFlow front page." width="500">
 
 ## Getting Started
 

@@ -13,79 +13,179 @@
 <body>
    
    <!-- Navigation -->
-   <div class="padding-global">
-      <div class="container-large">
-         <div class="padding-sections">
-            <nav id="nav-container">
-               <a href="#hero" class="logo">TaskFlow</a>
-               <ul class="nav-links">
-                  <li><a href="#features" class="nav-link">Features</a></li>
-                  <li><a href="#" class="nav-link">Pricing</a></li>
-                  <li><a href="#" class="nav-link">Contact Us</a></li>
-               </ul>
-               <div class="auth">
-                  <a href="#" class="btn">Sign In</a>
-                  <a href="#" class="btn btn-accent">Sign Up</a>
-               </div>
-            </nav>
+   <nav id="nav-links">
+      <div class="navigation">
+         <div class="nav-btn">
+            <div class="logo">
+               <a href="#hero">TaskFlow</a>
+            </div>
+            <ul class="nav-container">
+               <li><a href="#features" class="nav-link">Features</a></li>
+               <li><a href="#plans" class="nav-link">Plans</a></li>
+               <li><a href="#" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="auth">
+               <a href="#" class="auth-btn btn">Sign In</a>
+               <a href="#" class="auth-btn btn btn-secondary">Sign Up</a>
+            </div>
          </div>
       </div>
-   </div>
+   </nav>
 
-   <!-- Hero -->
-   <div class="main-wrapper">
-
-      <div class="padding-global">
-         <div class="container-large">
-            <header id="hero">
+   <!-- hero -->
+   <header id="hero">
+      <div class="container">
+         <div class="padding-global">
+            <div class="hero-container">
                <div class="hero-text">
-                  <h1>Align Your SaaS Teams from Code to Customer.</h1>
-                  <p>TaskFlow bridges the gap between customer feedback, product roadmaps, and developer sprints. Ship features faster without the cross-department chaos.</p>
-                  <a href="#" class="btn btn-accent">Start Your Free 14-Day Trial</a>
-                  <p class="credit-card">No credit card required *</p>
+                  <h1 class="hero-title">Align Your SaaS Teams from Code to Customer.</h1>
+                  <p class="hero-subtitle">TaskFlow bridges the gap between customer feedback, product roadmaps, and developer sprints. Ship features faster without the cross-department chaos.</p>
+                  <a href="#" class="hero-cta btn btn-secondary">Start Your Free 14-Day Trial</a>
+                  <p class="hero-headsup">No credit card required</p>
                </div>
                <div class="hero-img">
-                  <div class="hero-img-container">
-                     <img src="./assets/img_showcase/taskflow_ui.webp" alt="TaskFlow Dashboard User Interface.">
+                  <div class="hero-img-showcase">
+                     <img src="./assets/img_showcase/taskflow_ui.webp" alt="A laptop showing the TaskFlow Dashboard" class="taskflow-img">
                   </div>
                </div>
-            </header>
+            </div>
          </div>
       </div>
+   </header>
 
-      <!-- Main Content -->
-      <div class="padding-global">
-         <div class="container large">
-            <main id="main-content-area">
-               
-               <!-- Features -->
-               <section id="features" class="padding-sections">
+   <main class="main-wrapper">
+
+      <!-- Features -->
+      <section id="features">
+         <div class="container">
+            <div class="padding-global">
+               <div class="features-container">
                   <h2>Features</h2>
-                  <div class="feature-container">
-                     <div class="feature-box">
+                  <div class="feature-boxes">
+                     <div class="box">
                         <h3><i class="fa-regular fa-comment-dots"></i> The Unified Feedback Inbox</h3>
                         <p>Aggregates customer feature requests and bug reports from Intercom, Slack, or email directly into a triage board.</p>
                      </div>
-                     <div class="feature-box">
+                     <div class="box">
                         <h3><i class="fa-solid fa-person-running"></i> Interlocking Sprints</h3>
                         <p>Let product managers link marketing launch checklists directly to GitHub/GitLab repository issues. When developers merge the code, the marketing task goes live.</p>
                      </div>
-                     <div class="feature-box">
+                     <div class="box">
                         <h3><i class="fa-solid fa-timeline"></i> Interactive Public Roadmaps</h3>
                         <p>Turn internal task boards into a public, upvotable roadmap for users with a single click, closing the loop on transparency.</p>
                      </div>
-                     <div class="feature-box">
-                        <h3><i class="fa-solid fa-chart-column"></i> SaaS Metric Dashboards</h3>
+                     <div class="box">
+                        <h3><i class="fa-solid fa-chart-column"></i> The SaaS Metric Dashboards</h3>
                         <p>Visually link tasks to business goals. See how completing a set of optimization tasks directly correlates to drops in server latency or user churn.</p>
                      </div>
                   </div>
-               </section>
-
-            </main>
+               </div>
+            </div>
          </div>
-      </div>
+      </section>
 
-   </div>
+      <!-- Plans -->
+      <section id="plans">
+         <div class="container">
+            <div class="padding-global">
+               <div class="plans-container">
+                  <h2>Choose from our Plans</h2>
+                  <div class="plans-boxes">
+
+                     <div class="plans-box">
+                        <div class="plans-text">
+                           <h3>Bootstrapper</h3>
+                           <p class="plans-price">$29 / mo</p>
+                           <p><strong>Ideal For:</strong> Early-stage solo founders</p>
+                           <h4>Key Features Included:</h4>
+                           <ul>
+                              <li>Up to 5 team members</li>
+                              <li>2 active project boards</li>
+                              <li>Basic Slack integration</li>
+                           </ul>
+                        </div>
+                        <div class="plans-subscribe">
+                           <a href="#" class="btn"><i class="fa-solid fa-cart-plus"></i> Subscribe</a>
+                        </div>
+                     </div>
+
+                     <div class="plans-box">
+                        <div class="plans-text">
+                           <h3>Growth (Popular)</h3>
+                           <p class="plans-price">$79 / mo</p>
+                           <p><strong>Ideal For:</strong> Growing SaaS startups</p>
+                           <h4>Key Features Included:</h4>
+                           <ul>
+                              <li>Unlimited members</li>
+                              <li>GitHub & Intercom integrations</li>
+                              <li>Public Upvote Roadmap</li>
+                           </ul>
+                        </div>
+                        <div class="plans-subscribe">
+                           <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i> Subscribe</a>
+                        </div>
+                     </div>
+
+                     <div class="plans-box">
+                        <div class="plans-text">
+                           <h3>Enterprise</h3>
+                           <p class="plans-price">$249 / mo</p>
+                           <p><strong>Ideal For:</strong> Established software companies</p>
+                           <h4>Key Features Included:</h4>
+                           <ul>
+                              <li>Advanced security</li>
+                              <li>Dedicated database instance</li>
+                              <li>Priority support SLA, Custom webhooks</li>
+                           </ul>
+                        </div>
+                        <div class="plans-subscribe">
+                           <a href="#" class="btn"><i class="fa-solid fa-cart-plus"></i> Subscribe</a>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials">
+         <div class="container">
+            <div class="padding-global">
+               <div class="testimonials-container">
+                  <h2>What Our Customers Says?</h2>
+                  <div class="testimonials-boxes">
+
+                     <div class="testimonial-box">
+                        <div class="user-img">
+                           <img src="https://images.pexels.com/photos/29852852/pexels-photo-29852852.jpeg" alt="Sarah L., Founder of MetricsAI">
+                        </div>
+                        <div class="quote">
+                           <p><q>Before TaskFlow, our engineering team was building things marketing didn't even know about. Now, everyone is completely in sync. Our shipping velocity doubled.</q></p>
+                           <p class="quote-by">&ndash; Sarah L., Founder of MetricsAI</p>
+                        </div>
+                     </div>
+
+                     <div class="testimonial-box">
+                        <div class="user-img">
+                           <img src="https://images.pexels.com/photos/17362827/pexels-photo-17362827.jpeg" alt="David K., Head of Product at DevStream">
+                        </div>
+                        <div class="quote">
+                           <p><q>Being able to turn an intercom bug report into a tracked developer sprint ticket with one click saved us hours of copy-pasting every week.</q></p>
+                           <p class="quote-by">&ndash; David K., Head of Product at DevStream</p>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- TODO: FAQ Section -->
+
+   </main>
 
 </body>
 </html>

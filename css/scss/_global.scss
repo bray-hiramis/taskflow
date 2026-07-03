@@ -17,10 +17,10 @@ html {
 body {
    font-family: "Inter", sans-serif;
    background-color: utils.$bg-color;
-   height: 3000px;
 }
 
 a {
+   color: utils.$text-color;
    display: block;
    text-decoration: none;
 }
@@ -35,45 +35,53 @@ img {
    max-width: 100%;
 }
 
-// Padding
+h1, h2, h3, h4, p {
+   color: utils.$text-color;
+}
+
+// Utilities
 
 .padding-global {
-   padding-left: 5%;
-   padding-right: 5%;
+   padding: utils.$space-m 0; // 35px 0
 }
 
-.padding-sections {
-   padding: 5rem;
-}
-
-// Container
-
-.container-large {
-   margin: 0 auto !important;
-   width: 100%;
+.container {
    max-width: 1200px;
+   padding-left: 3rem;
+   padding-right: 3rem;
+   margin: 0 auto;
 }
 
-// Utilities 
+.navigation {
+   position: fixed;
+   top: 0;
+   min-width: 100%;
+   height: auto;
+   background-color: utils.$bg-color;
+}
 
 .btn {
-   margin-top: 10px;
-   border: 2px solid utils.$accent-color;
-   border-radius: utils.$corner-s;
-   cursor: pointer;
-   font-weight: bold;
-   transition: all .2s ease;
+   padding: utils.$space-s utils.$space-m;
+   border-radius: utils.$corner-m;
+   border: 1px solid utils.$accent-color;
+   font-weight: 600;
+   transition: all .2s ease-in;
+   &:hover {
+      background-color: utils.$bg-hover;
+   }
    &:active {
-      border: 2px solid utils.$primary-color;
-      background-color: utils.$primary-color;
+      background-color: utils.$bg-color;
    }
 }
 
-.btn-accent {
+.btn-secondary {
    background-color: utils.$accent-color;
-   border: 2px solid utils.$accent-color;
-   transition: all .2s ease;
+   color: utils.$text-color2;
+   transition: all .2s ease-in;
    &:hover {
-      background-color: utils.$hover-accent;
+      background-color: utils.$accent-hover;
+   }
+   &:active {
+      background-color: utils.$accent-color;
    }
 }
