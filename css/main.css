@@ -118,6 +118,7 @@ h1, h2, h3, h4, p {
   display: flex;
   gap: 10px;
 }
+
 #hero .hero-container {
   height: 100vh;
   display: grid;
@@ -170,9 +171,6 @@ h1, h2, h3, h4, p {
   font-size: 2rem;
 }
 
-#features {
-  background-color: #ececec;
-}
 #features .feature-boxes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -244,9 +242,9 @@ h1, h2, h3, h4, p {
   gap: 50px;
 }
 .testimonials-boxes .testimonial-box {
-  border: 2px solid #1E40AF;
+  border: 2px solid #06B6D4;
   padding: 45px;
-  box-shadow: 10px 10px #06B6D4;
+  box-shadow: 12px 12px #06B6D4;
   border-radius: 6px;
 }
 .testimonials-boxes .testimonial-box .user-img {
@@ -263,6 +261,129 @@ h1, h2, h3, h4, p {
 }
 .testimonials-boxes .testimonial-box .quote .quote-by {
   font-weight: 500;
+}
+
+#faq details[name=faq-box] {
+  padding: 15px;
+  margin-bottom: 35px;
+  border-radius: 6px;
+}
+#faq details[name=faq-box]:last-of-type {
+  margin-bottom: 0;
+}
+#faq details[name=faq-box] summary {
+  cursor: pointer;
+  font-size: 3.2rem;
+}
+#faq details[name=faq-box] p {
+  margin-left: 45px;
+}
+
+#contact {
+  background-color: #1E40AF;
+}
+#contact .contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#contact .contact-container .contact-box {
+  padding: 35px;
+}
+#contact .contact-container .contact-left {
+  padding-left: 0;
+  border-right: 2px solid #F8FAFC;
+}
+#contact .contact-container .contact-left h2, #contact .contact-container .contact-left h3, #contact .contact-container .contact-left p, #contact .contact-container .contact-left a {
+  color: #F8FAFC;
+}
+#contact .contact-container .contact-left a {
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+#contact .contact-container .contact-right {
+  padding-right: 0;
+}
+#contact .contact-container .contact-right label, #contact .contact-container .contact-right input, #contact .contact-container .contact-right select, #contact .contact-container .contact-right textarea, #contact .contact-container .contact-right button {
+  display: block;
+  width: 100%;
+}
+#contact .contact-container .contact-right label {
+  font-size: 2.4rem;
+  color: #F8FAFC;
+  margin-bottom: 5px;
+}
+#contact .contact-container .contact-right input, #contact .contact-container .contact-right select, #contact .contact-container .contact-right textarea {
+  margin-bottom: 15px;
+  background-color: #F8FAFC;
+  border: 1px solid #0F172A;
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 6px;
+  color: #0F172A;
+}
+#contact .contact-container .contact-right textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+#contact .contact-container .contact-right button[type=submit] {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 35px;
+}
+#contact .contact-container .contact-right input:focus {
+  outline: 2px solid #06B6D4;
+}
+#contact .contact-container .contact-right textarea:focus {
+  outline: 2px solid #06B6D4;
+}
+#contact .contact-container .contact-right select:focus {
+  outline: 2px solid #06B6D4;
+}
+
+#footer {
+  background-color: #ececec;
+}
+#footer .padding-global {
+  padding-bottom: 15px;
+}
+#footer .logo {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+#footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 15px;
+  gap: 60px;
+}
+#footer .footer-container .footer-column {
+  border-right: 1px solid #0F172A;
+}
+#footer .footer-container .footer-column:last-of-type {
+  border-right: none;
+}
+#footer .footer-container .footer-column .footer-links {
+  line-height: 2;
+}
+#footer .footer-container .footer-column .footer-links .footer-link {
+  font-size: 1.4rem;
+}
+#footer .footer-container .footer-column .footer-links .footer-link:hover {
+  text-decoration: underline;
+}
+#footer .footer-bottom-content {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+#footer .footer-bottom-content .social-logo a {
+  display: inline;
+  font-size: 2.2rem;
+  padding-right: 15px;
+}
+#footer .footer-bottom-content .social-logo a:hover {
+  color: #06B6D4;
 }
 
 /*# sourceMappingURL=main.css.map */

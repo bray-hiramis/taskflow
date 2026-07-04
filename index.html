@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/mobile.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
             <ul class="nav-container">
                <li><a href="#features" class="nav-link">Features</a></li>
                <li><a href="#plans" class="nav-link">Plans</a></li>
-               <li><a href="#" class="nav-link">Contact Us</a></li>
+               <li><a href="#contact" class="nav-link">Contact Us</a></li>
             </ul>
             <div class="auth">
                <a href="#" class="auth-btn btn">Sign In</a>
@@ -183,9 +184,146 @@
          </div>
       </section>
 
-      <!-- TODO: FAQ Section -->
+      <!-- FAQ -->
+      <section id="faq">
+         <div class="container">
+            <div class="padding-global">
+               <div class="faq-container">
+                  <h2 aria-label="Frequently Asked Question"><abbr title="Frequently Asked Questions">FAQ</abbr></h2>
+
+                  <div class="faq-boxes">
+
+                     <details name="faq-box">
+                        <summary>Does TaskFlow integrate with our existing developer tools?</summary>
+                        <p>Yes! TaskFlow features native, two-way sync integrations with GitHub, GitLab, Jira, and Slack out of the box.</p>
+                     </details>
+
+                     <details name="faq-box">
+                        <summary>Can we migrate our data from Trello or Notion?</summary>
+                        <p>Absolutely. We offer a 1-click import wizard that safely transfers all your boards, lists, and markdown notes in under two minutes.</p>
+                     </details>
+
+                     <details name="faq-box">
+                        <summary>Is our data secure?</summary>
+                        <p>Security is our priority. TaskFlow is SOC2 Type II compliant, uses AES-256 encryption at rest, and offers SAML Single Sign-On (SSO) on our Growth and Enterprise tiers.</p>
+                     </details>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Contact Us -->
+      <section id="contact">
+         <div class="container">
+            <div class="padding-global">
+
+               <div class="contact-container">
+
+                  <div class="contact-box contact-left">
+                     <h2>Have questions about scaling TaskFlow for your engineering team? Let's chat.</h2>
+                     <address>
+                        <h3>Email Us At:</h3>
+                        <a href="emailto:hello@taskflow.io">hello@taskflow.io</a>
+
+                        <h3>Our Headquarters:</h3>
+                        <p>TaskFlow Technologies, Inc.</p>
+                        <p>101 Mission Street, Suite 400</p>
+                        <p>San Francisco, CA 94105</p>
+                        <p>United States</p>
+                     </address>
+                  </div>
+
+                  <div class="contact-box contact-right">
+                     <form action="#" id="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+
+                        <label for="email">Business Email</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="company-size">Company Size</label>
+                        <select name="company-size" id="company-size" required>
+                           <option value="">(Select one option)</option>
+                           <option value="bootstrapper">1 - 5 employees (Bootstrapper)</option>
+                           <option value="growth">6 - 50 employees (Growth)</option>
+                           <option value="scale">51 - 500 employees (Scale)</option>
+                           <option value="enterprise">501+ employees (Enterprise)</option>
+                        </select>
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required></textarea>
+
+                        <button type="submit" class="btn btn-secondary">Send</button>
+                     </form>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
 
    </main>
+
+   <!-- Footer -->
+   <footer id="footer">
+      <div class="container">
+         <div class="padding-global">
+            <div class="logo">Taskflow</div>
+
+            <div class="footer-container">
+               <div class="footer-column">
+                  <ul class="footer-links">
+                     <li><a href="#" class="footer-link">Features</a></li>
+                     <li><a href="#" class="footer-link">Integrations</a></li>
+                     <li><a href="#" class="footer-link">Changelog</a></li>
+                     <li><a href="#" class="footer-link">Plans</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-column">
+                  <ul class="footer-links">
+                     <li><a href="#" class="footer-link">Documentation</a></li>
+                     <li><a href="#" class="footer-link">API Reference</a></li>
+                     <li><a href="#" class="footer-link">SaaS Blog</a></li>
+                     <li><a href="#" class="footer-link">Status Page</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-column">
+                  <ul class="footer-links">
+                     <li><a href="#" class="footer-link">About Us</a></li>
+                     <li><a href="#" class="footer-link">Careers</a></li>
+                     <li><a href="#" class="footer-link">Contact</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-column">
+                  <ul class="footer-links">
+                     <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                     <li><a href="#" class="footer-link">Terms of Service</a></li>
+                     <li><a href="#" class="footer-link">Security</a></li>
+                     <li><a href="#" class="footer-link">GDPR Compliace</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer-bottom-content">
+               <div class="social-logo">
+                  <a href="https://www.linkedin.com/in/john-brian-hiramis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/bray-hiramis" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://x.com/HiramisBrian" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+               </div>
+               <div class="copyright">
+                  <p>&copy; 2026 TaskFlow Inc. All rights reserved</p>
+                  <p>Made with ♥️ | Brian Hiramis </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- TODO: LOGO and Mobile CSS -->
 
 </body>
 </html>

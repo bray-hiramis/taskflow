@@ -1,18 +1,19 @@
 # TaskFlow
 
-TaskFlow is a mockup landing website for SAAS Productivity Tool.
+TaskFlow is a mockup (responsive) landing website for SaaS Productivity Tool.
 
 ## Sections
-- Hero Section - This section showcase the what TaskFlow offers.
-- Features - A section showcasing all the services.
-- Pricing & Testimonials - Price of the service and feedback of customers.
-- Contact Us - This ensures that potential customers can reach out.
-- FAQs - For most common questions regarding the services.
+- <strong>Hero Section</strong> - This section showcase the what TaskFlow offers.
+- <strong>Features</strong> - A section showcasing all the services.
+- <strong>Pricing & Testimonials</strong> - Price of the service and feedback of customers.
+- <strong>Contact Us</strong> - This ensures that potential customers can reach out.
+- <strong>FAQs</strong> - For most common questions regarding the services.
 
 ## Demo
-Live Demo: https://taskflowprodapp.netlify.app/
-
-<img src="./_screenshots/taskflow_ui_v2.png" alt="Screenshot of TaskFlow front page." width="500">
+Live Demo: <a href="https://taskflowprodapp.netlify.app/" target="_blank">taskflowprodapp.netlify.app</a>
+| Desktop View | Mobile View |
+| ------------ | ----------- |
+| <img src="./_screenshots/taskflow_ui_v3.png" alt="Screenshot of TaskFlow front page." width="400"> | ----------- |
 
 ## Getting Started
 
@@ -24,8 +25,8 @@ cd taskflow
 ```
 
 ## Tech Stack
-
-I used HTML and SASS (CSS precompiler).
+- HTML
+- SASS (CSS pre-compiler)
 
 ## Author
 <strong>- Brian Hiramis</strong>

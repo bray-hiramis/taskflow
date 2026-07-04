@@ -42,9 +42,6 @@
    .auth {
       display: flex;
       gap: 10px;
-      .auth-btn {
-         
-      }
    }
 }
 
@@ -92,6 +89,8 @@
    }
 }
 
+// Wrapper
+
 .main-wrapper {
    h2 {
       font-size: 4.2rem;
@@ -114,13 +113,11 @@
 // Features
 
 #features {
-   background-color: utils.$bg-hover;
    .feature-boxes {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       .box {
-         // min-width: 400px;
          min-height: 200px;
          padding: utils.$space-l;
          background: linear-gradient(45deg, utils.$primary-color, utils.$accent-color 60%);
@@ -195,9 +192,9 @@
    align-content: center;
    gap: 50px;
    .testimonial-box {
-      border: 2px solid utils.$primary-color;
+      border: 2px solid utils.$accent-color;
       padding: utils.$space-l;
-      box-shadow: 10px 10px utils.$accent-color;
+      box-shadow: 12px 12px utils.$accent-color;
       border-radius: utils.$corner-m;
       .user-img {
          max-width: 200px;
@@ -213,6 +210,139 @@
       }
       .quote .quote-by {
          font-weight: 500;
+      }
+   }
+}
+
+// FAQ
+
+#faq {
+   details[name="faq-box"] {
+      padding: utils.$space-s;
+      margin-bottom: utils.$space-m;
+      border-radius: utils.$corner-m;
+      &:last-of-type {
+         margin-bottom: 0;
+      }
+      summary {
+         cursor: pointer;
+         font-size: 3.2rem;
+      }
+      p {
+         margin-left: utils.$space-l;
+      }
+   }
+}
+
+// Contact Us
+
+#contact {
+   background-color: utils.$primary-color;
+   .contact-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      .contact-box {
+         padding: utils.$space-m;
+      }
+      .contact-left {
+         padding-left: 0;
+         border-right: 2px solid utils.$bg-color;
+         h2, h3, p, a {
+            color: utils.$text-color2;
+         }
+         a {
+            font-size: 2rem;
+            margin-bottom: utils.$space-m;
+         }
+      }
+      .contact-right {
+         padding-right: 0;
+         label, input, select, textarea, button {
+            display: block;
+            width: 100%;
+         }
+         label {
+            font-size: 2.4rem;
+            color: utils.$text-color2;
+            margin-bottom: utils.$space-xs;
+         }
+         input, select, textarea {
+            margin-bottom: utils.$space-s;
+            background-color: utils.$bg-color;
+            border: 1px solid utils.$text-color;
+            font-size: 2rem;
+            padding: utils.$space-s;
+            border-radius: utils.$corner-m;
+            color: utils.$text-color;
+         }
+         textarea {
+            resize: vertical;
+            min-height: 180px;
+         }
+         button[type="submit"] {
+            font-size: 2rem;
+            cursor: pointer;
+            margin-top: utils.$space-m;
+         }
+         input:focus {
+            outline: 2px solid utils.$accent-color;
+         }
+         textarea:focus {
+            outline: 2px solid utils.$accent-color;
+         }
+         select:focus {
+            outline: 2px solid utils.$accent-color;
+         }
+      }
+   }
+}
+
+// Footer
+
+#footer {
+   background-color: utils.$bg-hover;
+   .padding-global {
+      padding-bottom: utils.$space-s;
+   }
+   .logo {
+      font-size: 4rem;
+      margin-bottom: utils.$space-s;
+   }
+   .footer-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: utils.$space-s;
+      gap: 60px;
+      .footer-column {
+         border-right: 1px solid utils.$text-color;
+         &:last-of-type {
+            border-right: none;
+         }
+         .footer-links {
+            line-height: 2;
+            .footer-link {
+               font-size: 1.4rem;
+               &:hover {
+                  text-decoration: underline;
+               }
+            }
+         }
+      }
+   }
+   .footer-bottom-content {
+      text-align: center;
+      font-size: 1.4rem;
+      line-height: 2;
+      .social-logo {
+         a {
+            display: inline;
+            font-size: 2.2rem;
+            padding-right: utils.$space-s;
+            &:hover {
+               color: utils.$accent-color;
+            }
+         }
       }
    }
 }
