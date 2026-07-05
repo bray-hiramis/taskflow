@@ -46,10 +46,15 @@ h1, h2, h3, h4, p {
 }
 
 .container {
+   width: 100%;
    max-width: 1200px;
    padding-left: 3rem;
    padding-right: 3rem;
    margin: 0 auto;
+}
+
+.logo {
+   max-width: 180px;
 }
 
 .navigation {

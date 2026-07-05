@@ -48,6 +48,10 @@ h1, h2, h3, h4, p {
   margin: 0 auto;
 }
 
+.logo {
+  max-width: 180px;
+}
+
 .navigation {
   position: fixed;
   top: 0;
