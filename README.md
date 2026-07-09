@@ -10,7 +10,7 @@ TaskFlow is a mockup (responsive) landing website for SaaS Productivity Tool.
 - <strong>FAQs</strong> - For most common questions regarding the services.
 
 ## Demo
-Live Demo: <a href="https://bray-hiramis.github.io/taskflow/" target="_blank">taskflowprodapp.netlify.app</a>
+Live Demo: <a href="https://bray-hiramis.github.io/taskflow/" target="_blank">taskflow</a>
 | Desktop View | Mobile View |
 | ------------ | ----------- |
 | <img src="./_screenshots/taskflow_ui_v4.png" alt="Screenshot of TaskFlow front page." width="400"> | <img src="./_screenshots/taskflow_ui_mobile.png" alt="Screenshot of TaskFlow front page." width="80"> |
